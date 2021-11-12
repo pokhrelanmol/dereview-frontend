@@ -8,6 +8,7 @@ import uniqId from "uniqid";
 import Image from "next/dist/client/image";
 import CoursesCard from "./cards/CoursesCard";
 import ReviewCard from "./cards/ReviewCard";
+import router from "next/router";
 const demoCourses = [
   {
     name: "Machine Laerning",
@@ -77,10 +78,13 @@ const DemoReviews = [
   },
 ];
 const BootcampDetails = () => {
+  const handleWriteReview = () => {
+    router.push("/reviewFormPage");
+  };
   return (
     <>
       {/* first section */}
-      <section className="bg-gray-200 py-5 border-b border-gray-600 rounded-sm">
+      <section className="bg-gray-200 py-5 shadow-md ">
         <div className=" max-w-4xl mx-auto bg-white rounded-lg p-10">
           <div className="flex justify-around items-center">
             <Image src="/images/Logo.png" width={150} height={150} />
@@ -96,7 +100,10 @@ const BootcampDetails = () => {
           </div>
 
           <div className="flex justify-around items-center">
-            <button className="py-4 px-7 border border-red-600 rounded-md shadow-md bg-gray-200 text-red-600 font-semibold hover:bg-white focus:bg-red-100 ">
+            <button
+              onClick={handleWriteReview}
+              className="py-4 px-7 border border-red-600 rounded-md shadow-md bg-gray-200 text-red-600 font-semibold hover:bg-white focus:bg-red-100 "
+            >
               Write a Review
             </button>
             <p className="flex space-x-1 text-yellow-400">
@@ -166,7 +173,7 @@ const BootcampDetails = () => {
             ))}
           </div>
           {/* reviews */}
-          <section className="max-w-5xl mx-auto py-10 ">
+          <section className="max-w-5xl mx-auto py-10  ">
             <h1 className="heading">Students Reviews</h1>
             <div className=" grid grid-cols-2 gap-5 ">
               {DemoReviews.map(

@@ -6,10 +6,13 @@ type CoursesCardPropsType = {
   price: string;
 };
 const CoursesCard = ({ name, duration, price }: CoursesCardPropsType) => {
+  const handleCardClick = () => {
+    // your  logic
+  };
   return (
     <div
-      onClick={() => router.push("/CourseDetailsPage")}
-      className="grid grid-cols-3 mb-10 bg-gray-100 rounded-sm  p-7"
+      onClick={handleCardClick}
+      className="grid grid-cols-3 mb-10 cursor-pointer bg-gray-100 rounded-sm  p-7 hover:bg-white transition  delay-150 ease-out"
     >
       <p>
         Name:

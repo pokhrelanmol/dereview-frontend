@@ -1,6 +1,6 @@
 const InfoSection = () => {
   return (
-    <section className=" py-12 bg-gray-200 border-b border-gray-600">
+    <section className=" py-12 bg-gray-200 shadow-md">
       <div className="max-w-5xl mx-auto ">
         <h1 className="text-center text-4xl font-bold pb-8 text-gray-700 tracking-wider">
           Best Coding BootCamps Rankings
