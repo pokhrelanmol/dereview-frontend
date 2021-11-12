@@ -1,4 +1,5 @@
 import { StarIcon } from "@heroicons/react/solid";
+import router from "next/router";
 import uniqId from "uniqid";
 type BootcampCardPropsType = {
   name: string;
@@ -13,7 +14,10 @@ const BootcampCard = ({
   subjects,
 }: BootcampCardPropsType) => {
   return (
-    <div className="bg-gray-50 shadow-md border border-gray-600 h-30 w-54 space-y-2 m-4 cursor-pointer flex flex-col items-center p-10 rounded-md">
+    <div
+      onClick={() => router.push("/bootcampDetailsPage")}
+      className="bg-gray-50 shadow-md border border-gray-600 h-30 w-54 space-y-2 m-4 cursor-pointer flex flex-col items-center p-10 rounded-md"
+    >
       <img
         src="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/2022/original.png?1630021827"
         alt="name"
@@ -23,7 +27,7 @@ const BootcampCard = ({
         {name}
       </a>
       <p className="flex space-x-1 text-yellow-400">
-        {Array(Math.round(4.6))
+        {Array(Math.round(stars))
           .fill(1)
           .map((_, i) => (
             <StarIcon key={uniqId()} className="h-5" />

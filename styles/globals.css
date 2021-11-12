@@ -4,3 +4,6 @@
 .links {
   @apply block hover:text-blue-700 w-auto  hover:underline cursor-pointer;
 }
+.heading {
+  @apply text-center text-4xl font-bold pb-8 text-gray-700 tracking-wider;
+}
