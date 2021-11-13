@@ -16,7 +16,6 @@ const JobSupportStarRating = () => {
         activeColor="#ffd700"
         emptyIcon={<i className="far fa-star"></i>}
         fullIcon={<i className="fa fa-star"></i>}
-        activeColor="#ffd700"
       />
     </>
   );
