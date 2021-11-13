@@ -1,4 +1,5 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
+import HandleModalToShow from "./HandleModalToShow";
 type PopUpPropsTypes = {
   setShowPopUp: Dispatch<SetStateAction<boolean>>;
 };
@@ -12,6 +13,7 @@ export const PopUp = ({ setShowPopUp }: PopUpPropsTypes) => {
   };
   const handleSubmitButtonClick = () => {
     setSelectedRadioButtonOnSubmit(selectedRadioButtonOnChange);
+    setShowPopUp(false);
   };
   return (
     <div className="bg-gray-200 w-80 h-42 p-5 absolute right-10 z-100  shadow-lg">
@@ -39,11 +41,14 @@ export const PopUp = ({ setShowPopUp }: PopUpPropsTypes) => {
       />
       <br />
       <button
-        onClick={handleSubmitButtonClick}
+        onClick={() => {
+          handleSubmitButtonClick();
+        }}
         className="float-right text-blue-600 border  "
       >
         Submit
       </button>
+      <HandleModalToShow selectedRadioButton={selectedRadioButtonOnSubmit} />
     </div>
   );
 };

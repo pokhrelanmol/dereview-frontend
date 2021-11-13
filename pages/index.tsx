@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import BootcampCardsList from "../components/BootcampCardsList";
+import AddCourseToTheBootcamp from "../components/createCouseHandler/AddCourseToTheBootcamp";
+import CreateNewBootcampModal from "../components/createCouseHandler/CreateNewBootcampModal";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
@@ -20,6 +22,7 @@ const Home: NextPage = () => {
       <main>
         <HeroSection />
         <InfoSection />
+        <CreateNewBootcampModal />
         <BootcampCardsList />
       </main>
       <footer>

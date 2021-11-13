@@ -9,7 +9,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="h-20 shadow-md  bg-white flex justify-around items-center  ">
+      <div className="h-20 shadow-md   bg-white flex justify-around items-center  ">
         <div onClick={() => router.push("/")} className="cursor-pointer">
           <img
             className=" h-20 w-36 sm:h-14 cursor-pointer object-cover"
