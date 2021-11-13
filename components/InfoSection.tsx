@@ -1,11 +1,11 @@
 const InfoSection = () => {
   return (
-    <section className=" py-12 bg-gray-200 shadow-md">
+    <section className=" py-12 bg-gray-50 shadow-md">
       <div className="max-w-5xl mx-auto ">
         <h1 className="text-center text-4xl font-bold pb-8 text-gray-700 tracking-wider">
           Best Coding BootCamps Rankings
         </h1>
-        <div className="flex bg-gray-50 p-12 rounded-md shadow-md">
+        <div className="flex bg-gray-100 p-12 rounded-md shadow-md">
           <p className=" font-small leading-7 text-gray-800 tracking-wider">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
             repellat voluptatum omnis, saepe iure delectus laborum error officia

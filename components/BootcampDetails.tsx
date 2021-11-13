@@ -30,6 +30,21 @@ const demoCourses = [
     duration: "12 weeks",
     price: "100$",
   },
+  {
+    name: "Machine Laerning",
+    duration: "12 weeks",
+    price: "100$",
+  },
+  {
+    name: "Machine Laerning",
+    duration: "12 weeks",
+    price: "100$",
+  },
+  {
+    name: "Machine Laerning",
+    duration: "12 weeks",
+    price: "100$",
+  },
 ];
 const DemoReviews = [
   {
@@ -161,7 +176,7 @@ const BootcampDetails = () => {
             </p>
           </div>
           {/* courses */}
-          <div className="p-5 bg-gray-50 ">
+          <div className="p-5 bg-gray-50 h-80 overflow-scroll scrollbar-hide ">
             <h1 className="heading">Couses Offers</h1>
             {demoCourses.map(({ name, price, duration }) => (
               <CoursesCard

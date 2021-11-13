@@ -1,7 +1,7 @@
 import Image from "next/image";
 const HeroSection = () => {
   return (
-    <div className="  shadow-md ">
+    <div className="  shadow-md -z-10 ">
       <div className=" grid md:grid-cols-2 max-w-5xl mx-auto  ">
         <div className="flex flex-col justify-center items-center  pt-44 md:pt-0 ">
           <h1 className=" font-bold  text-5xl md:text-6xl sm:font-extrabold text-gray-700 sm:p-5  leading-14 tracking-wide      ">

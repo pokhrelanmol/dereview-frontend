@@ -15,6 +15,8 @@ specifiers:
   react-datepicker: ^4.3.0
   react-dom: 17.0.2
   react-rating-stars-component: ^2.2.0
+  reactjs-popup: ^2.0.5
+  tailwind-scrollbar-hide: ^1.1.5
   tailwindcss: ^2.2.19
   typescript: 4.4.4
   uniqid: ^5.4.0
@@ -26,6 +28,8 @@ dependencies:
   react-datepicker: 4.3.0_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-rating-stars-component: 2.2.0
+  reactjs-popup: 2.0.5_react-dom@17.0.2+react@17.0.2
+  tailwind-scrollbar-hide: 1.1.5
   uniqid: 5.4.0
 
 devDependencies:
@@ -2832,6 +2836,17 @@ packages:
       object-assign: 4.1.1
     dev: false
 
+  /reactjs-popup/2.0.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-b5hv9a6aGsHEHXFAgPO5s1Jw1eSkopueyUVxQewGdLgqk2eW0IVXZrPRpHR629YcgIpC2oxtX8OOZ8a7bQJbxA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
   /readable-stream/3.6.0:
     resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
     engines: {node: '>= 6'}
@@ -3217,6 +3232,10 @@ packages:
       string-width: 4.2.3
       strip-ansi: 6.0.1
     dev: true
+
+  /tailwind-scrollbar-hide/1.1.5:
+    resolution: {integrity: sha512-+an0OtSZQgvL5cE66A6WOaOHjjv8nGEJJfajnbzgKmo77UFOnspsViOdqp/ySu2Q3cjXk2BK4H7y0p2rmc0rVw==}
+    dev: false
 
   /tailwindcss/2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3:
     resolution: {integrity: sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==}

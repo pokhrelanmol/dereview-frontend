@@ -3,25 +3,25 @@ import BootcampCard from "./cards/BootcampCard";
 import uniqId from "uniqid";
 const demoBootcamps = [
   {
-    name: "chainsort",
+    name: "chainshot",
     stars: 4,
     mode: "online",
     subjects: "Data science,Web Development,Smart Contracts ",
   },
   {
-    name: "chainsort",
+    name: "chainshot",
     stars: 4,
     mode: "online",
     subjects: "Data science,Web Development,Smart Contracts ",
   },
   {
-    name: "chainsort",
+    name: "chainshot",
     stars: 4,
     mode: "online",
     subjects: "Data science,Web Development,Smart Contracts ",
   },
   {
-    name: "chainsort",
+    name: "chainshot",
     stars: 4,
     mode: "online",
     subjects: "Data science,Web Development,Smart Contracts ",
