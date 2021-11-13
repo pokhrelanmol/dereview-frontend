@@ -3,7 +3,7 @@ import router from "next/router";
 const Footer = () => {
   return (
     <div>
-      <footer className="text-gray-600 body-font bg-gray-100">
+      <footer className="text-gray-600 body-font bg-gray-200">
         <div className="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div
             onClick={() => router.push("/")}
